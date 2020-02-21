@@ -2,7 +2,7 @@
 
 Payload example received from ws:
 
-```json
+```js
 {
   "e": "depthUpdate", // Event type
   "E": 123456789,     // Event time

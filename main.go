@@ -191,7 +191,7 @@ func getPairDepthFromEvent(event *depthEventStruct) (pairDepth *pairDepthStruct)
 		Bid:  orderStruct{highestBid, highestBidQuantity},
 		Ask:  orderStruct{lowestAsk, lowestAskQuantity},
 		pair: event.Symbol,
-		time: time.Now().Format(time.RFC822),
+		time: time.Now().Format(time.StampMilli),
 	}
 	return pairDepth
 }
